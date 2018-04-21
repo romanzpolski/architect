@@ -1,0 +1,19 @@
+[
+  {
+    "questions":{
+      "question":"Are you looking to build new website or do you have one and want to customise/fix it ?",
+      "I need new website":{
+        "question": "What kind of website are you interested in ?",
+        "I need a regular website":{},
+        "I need online shop":{},
+        "I need something else":{}
+      },
+      "I have website":{
+        "question":"What kind of service You are looking for ?",
+        "I have some problems with it, I need someone to fix it":{},
+        "I need to add new feature":{},
+        "I need something else":{}
+      }
+    }
+  }
+]

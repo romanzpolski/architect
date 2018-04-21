@@ -12,11 +12,25 @@
     "devDependencies": {
         "axios": "^0.18",
         "bootstrap": "^4.0.0",
-        "popper.js": "^1.12",
         "cross-env": "^5.1",
         "jquery": "^3.2",
         "laravel-mix": "^2.0",
         "lodash": "^4.17.4",
-        "vue": "^2.5.7"
+        "popper.js": "^1.12",
+        "vue": "^2.5.7",
+        "vue-particles": "^1.0.9"
+    },
+    "dependencies": {
+        "animate.css": "^3.6.1",
+        "babel-loader": "^7.1.4",
+        "babel-plugin-transform-object-rest-spread": "^6.26.0",
+        "babel-preset-env": "^1.6.1",
+        "babel-preset-es2015": "^6.24.1",
+        "font-awesome": "^4.7.0",
+        "snapsvg": "^0.5.1",
+        "vue-flat-surface-shader": "^1.0.5",
+        "vue-fullpage.js": "0.0.1",
+        "vue-stepper": "^1.0.11",
+        "vuelidate": "^0.6.2"
     }
 }

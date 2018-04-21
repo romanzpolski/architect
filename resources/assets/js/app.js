@@ -1,22 +1,44 @@
-
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
-
+import axios from 'axios';
 require('./bootstrap');
 
 window.Vue = require('vue');
 
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
-
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
+Vue.component('full-page-component', require('./components/fullpageComponent.vue'));
+Vue.component('top-section-component', require('./components/TopSectionComponent.vue'));
+Vue.component('bottom-section-component', require('./components/BottomSectionComponent.vue'));
+Vue.component('logos-component', require('./components/LogosComponent.vue'));
+Vue.component('wp-form-component', require('./components/WpStepperComponent.vue'));
+Vue.component('stepper', require('./components/StepperComponent.vue'));
+Vue.component('WpStepOne', require('./components/WpStepOne.vue'));
+Vue.component('WpStepTwo', require('./components/WpStepTwo.vue'));
+
+//Vue.component('fullpage', require('vue-fullpage.js'));
+
+import FlatSurfaceShader from 'vue-flat-surface-shader'
+import VueParticles from 'vue-particles'
+//import FullPage from 'vue-fullpage.js'
+
+Vue.use(FlatSurfaceShader)
+Vue.use(VueParticles)
+//Vue.use(FullPage)
+
+var A = {"id":1}
+var B = {"id":2,"title":"B object title"}
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    data: {
+        message: 'sample message in app component'
+    },
+    created() {
+        //FlatSurfaceShader ? alert('FlatSurfaceShader') : alert('niema FlatSurfaceShader');
+        //jQuery ? alert('jQ v - '+jQuery.fn.jquery) : alert('no jq');
+        //$ ? alert('$ v - '+$.fn.jquery) : alert('no $');
+        //FullPage ? alert('FullPage ') : alert('no FullPage');
+    },
+    methods:{
+
+    }
 });
+
